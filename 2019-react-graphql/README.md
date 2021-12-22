@@ -1,11 +1,11 @@
-# graphql-full-stack-error-handling
-
-## Quick Links
 |                        |                              |
 | -----------------------|-----------------------------------------|
+| Title                  | Full-Stack error handling with React and GraphQL |
+| Details                | talk on error handing in React and GraphQL. A deep dive into the practical error handling techniques widely adopted across the React and GraphQL ecosystem |
 | Persentation Slides    | [Error Handling With React & GraphQL.pdf](https://github.com/gufranmirza/talks/blob/main/2019-react-graphql/Error%20Handling%20With%20React%20%26%20GraphQL.pdf)       |
-| Meetup Link            | https://www.meetup.com/ReactJS-and-Friends/events/267183004/        |
+| Meetup Link            | https://www.meetup.com/ReactJS-and-Friends/events/262800538/        |
 | Recording              | N/A        |
+
 
 
 ## install deps
