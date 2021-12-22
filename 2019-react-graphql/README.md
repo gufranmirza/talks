@@ -7,7 +7,6 @@
 | Meetup Link            | https://www.meetup.com/ReactJS-and-Friends/events/267183004/        |
 | Recording              | N/A        |
 
----
 
 ## install deps
 ```
