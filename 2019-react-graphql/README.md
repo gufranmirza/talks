@@ -1,5 +1,13 @@
 # graphql-full-stack-error-handling
 
+## Quick Links
+|                        |                              |
+| -----------------------|-----------------------------------------|
+| Persentation Slides    | [Error Handling With React & GraphQL.pdf](https://github.com/gufranmirza/talks/blob/main/2019-react-graphql/Error%20Handling%20With%20React%20%26%20GraphQL.pdf)       |
+| Meetup Link            | https://www.meetup.com/ReactJS-and-Friends/events/267183004/        |
+| Recording              | N/A        |
+
+
 ## install deps
 ```
 github.com/graphql-go/graphql
