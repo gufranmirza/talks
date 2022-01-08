@@ -1,0 +1,9 @@
+# Lock down mutual TLS for the entire foo ns
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: peer-authentication-foo
+  namespace: foo
+spec:
+  mtls:
+    mode: STRICT
