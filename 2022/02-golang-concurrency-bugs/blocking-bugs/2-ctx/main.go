@@ -14,7 +14,7 @@ func main() {
 				if r := recover(); r != nil {
 					fmt.Println("Recovered in f", r)
 				}
-				// cancel()
+				cancel()
 			}()
 
 			for i, item := range elements {
@@ -23,7 +23,6 @@ func main() {
 				// call done
 				if i == len(elements)-1 {
 					// fmt.Println(elements[100]) // panic
-					cancel()
 				}
 			}
 		}()

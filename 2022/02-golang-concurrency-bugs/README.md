@@ -1,11 +1,7 @@
 |                        |                              |
 | -----------------------|-----------------------------------------|
-| Title                  |  Securing Cloud Native Workloads with Istio |
-| Details                | This talk is all about securing the application workload using the Istio. Deep dive into security of ingress and egress gateways and helpful debugging tips. |
-| Persentation Slides    | [Securing Cloud Native Workloads with Istio.pdf](https://slides.com/gufranmirza/deck/fullscreen)       |
-| Event Link            | https://www.linkedin.com/video/event/urn:li:ugcPost:6862530583474634752/        |
-| Recording              | https://www.youtube.com/watch?v=upBfwP7CYvo        |
-
----
-
-
+| Title                  |  Golang Concurrency Bugs |
+| Details                | This talk is all about different types of concurrency bugs in Golang. Common pitfalls one will face while writing concurrent programs in Golang, and solutions to some of common concurrency bugs.|
+| Persentation Slides    | [Golang Concurrency Bugs.pdf](https://github.com/gufranmirza/talks/blob/main/2022/02-golang-concurrency-bugs/slides/Golang%20Concurrency%20Bugs.pdf)       |
+| Event Link            | https://www.meetup.com/Golang-Pune/events/283939317/        |
+| Recording              | N/A        |

@@ -10,10 +10,11 @@ func main() {
 
 	var wg sync.WaitGroup
 
-	wg.Add(len(elements) + 1)
+	wg.Add(len(elements))
 
 	for _, item := range elements {
-		wg.Add(len(elements))
+
+		// wg.Add(len(elements))
 
 		go func(wg *sync.WaitGroup, item string) {
 			defer wg.Done()
