@@ -2,7 +2,11 @@ package main
 
 import (
 	"hash/crc32"
+	"log"
 	"math/rand"
+	"net/http"
+	_ "net/http/pprof"
+
 	"sync"
 )
 
@@ -20,6 +24,11 @@ func main() {
 			wg.Done()
 		}()
 	}
+
+	// pprof
+	go func() {
+		log.Println(http.ListenAndServe("localhost:6060", nil))
+	}()
 
 	wg.Wait()
 }
