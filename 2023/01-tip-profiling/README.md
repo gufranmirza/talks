@@ -1,7 +1,7 @@
 |                        |                              |
 | -----------------------|-----------------------------------------|
-| Title                  |  Goroutines demystiﬁed |
-| Details                | This talk is all about Internals of goroutines, threading & scheduling | 
-| Persentation Slides    | [Goroutines demystiﬁed.pdf](https://github.com/gufranmirza/talks/blob/main/2022/03-go-routines-scheduling/slides/Goroutines%20%20demystified.pdf)       |
-| Event Link            | https://www.meetup.com/Golang-Pune/events/285174680/        |
+| Title                  |  TIP: Time-Proportional Instruction Profiling |
+| Details                | Internals of CPU Profiling with different instruction sets and architectures | 
+| Persentation Slides    | [Time-Proportional Instruction Profiling.pdf](https://github.com/gufranmirza/talks/blob/main/2023/01-tip-profiling/slides/TIP_%20Time-Proportional%20Instruction%20Profiling.pdf)       |
+| Event Link            | N/A        |
 | Recording              | N/A        |
