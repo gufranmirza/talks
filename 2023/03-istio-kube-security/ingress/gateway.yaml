@@ -1,0 +1,45 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: nginx-gw
+spec:
+  selector:
+    istio: ingressgateway # use istio default ingress gateway
+  servers:
+    - port:
+        number: 443
+        name: https
+        protocol: HTTPS
+      tls:
+        mode: PASSTHROUGH
+        minProtocolVersion: TLSV1_2
+        cipherSuites:
+          - ECDHE-ECDSA-CHACHA20-POLY1305
+          - ECDHE-RSA-CHACHA20-POLY1305
+          - ECDHE-ECDSA-AES256-GCM-SHA384
+          - ECDHE-RSA-AES256-GCM-SHA384
+          - ECDHE-RSA-AES128-GCM-SHA256
+          - ECDHE-ECDSA-AES128-GCM-SHA256
+
+      hosts:
+        - nginx.example.com
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: nginx
+spec:
+  hosts:
+    - nginx.example.com
+  gateways:
+    - nginx-gw
+  tls:
+    - match:
+        - port: 443
+          sniHosts:
+            - nginx.example.com
+      route:
+        - destination:
+            host: my-nginx
+            port:
+              number: 443
