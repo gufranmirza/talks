@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: my-nginx
+  namespace: ingress
   labels:
     run: my-nginx
 spec:
@@ -15,6 +16,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-nginx
+  namespace: ingress
 spec:
   selector:
     matchLabels:

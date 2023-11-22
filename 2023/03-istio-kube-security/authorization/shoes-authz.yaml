@@ -2,7 +2,7 @@ apiVersion: "security.istio.io/v1beta1"
 kind: "AuthorizationPolicy"
 metadata:
   name: "shoes-writer"
-  namespace: default
+  namespace: auth
 spec:
   selector:
     matchLabels:
@@ -10,7 +10,7 @@ spec:
   rules:
     - from:
         - source:
-            principals: ["cluster.local/ns/default/sa/inventory-sa"]
+            principals: ["cluster.local/ns/auth/sa/inventory-sa"]
       to:
         - operation:
             methods: ["GET"]

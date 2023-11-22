@@ -1,11 +1,11 @@
-kubectl create default mtls
-kubectl label namespace default istio-injection=enabled
+kubectl create ns auth
+kubectl label namespace auth istio-injection=enabled
 
-kubectl apply -f k8s.yaml -n mtls
-kubectl get all -n default
+kubectl apply -f k8s.yaml -n auth
+kubectl get all -n auth
 
-kubectl get AuthorizationPolicy
+kubectl get AuthorizationPolicy --all-namespaces
 
-kubectl exec -n default -it inventory-999859cb8-h5vfm -- /bin/sh
+kubectl exec -n auth -it inventory-6dfbcfdcf4-xm9mn -- /bin/sh
 curl -v -X GET users
 curl -v -X GET shoes

@@ -1,3 +1,16 @@
+kubectl create ns ingress
+kubectl label namespace ingress istio-injection=enabled
+
+kubectl get all -n ingress
+
+kubectl create secret tls nginx-server-certs \
+ --key example_certs/nginx.example.com.key \
+ --cert example_certs/nginx.example.com.crt -n ingress
+
+kubectl create configmap nginx-configmap --from-file=nginx.conf=./nginx.conf -n ingress
+
+GET INGRESS HOST/PORT
+
 ```
 export INGRESS_NAME=istio-ingressgateway
 export INGRESS_NS=istio-system
