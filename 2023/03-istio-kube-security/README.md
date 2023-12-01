@@ -1,0 +1,7 @@
+|                     |                                                                                                                                                                                            |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Title               | PnPLoc: UWB Based Plug & Play Indoor Localization                                                                                                                                          |
+| Details             | Passive TDoA Protocol (2-WAY) PnPLoc                                                                                                                                                       |
+| Persentation Slides | [PnPLoc_ UWB Based Plug & Play Indoor Localization.pdf](https://github.com/gufranmirza/talks/blob/main/2023/02-pnploc/sides/PnPLoc_%20UWB%20Based%20Plug%20%26%20Play%20Indoor%20Localization.pdf) |
+| Event Link          | N/A                                                                                                                                                                                        |
+| Recording           | N/A                                                                                                                                                                                        |

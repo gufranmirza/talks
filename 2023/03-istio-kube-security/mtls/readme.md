@@ -11,7 +11,7 @@ kubectl get all -n bar
 
 kubectl get peerauthentication --all-namespaces
 
-kubectl exec -n bar -it sleep-7656cf8794-w6gq8 -- /bin/sh
+kubectl exec -n bar -it pod/sleep-9454cc476-tqh2t -- /bin/sh
 
 curl -v httpbin.foo.svc.cluster.local:8000
 

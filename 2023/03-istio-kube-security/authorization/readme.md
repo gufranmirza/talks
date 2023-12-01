@@ -6,6 +6,6 @@ kubectl get all -n auth
 
 kubectl get AuthorizationPolicy --all-namespaces
 
-kubectl exec -n auth -it inventory-6dfbcfdcf4-xm9mn -- /bin/sh
+kubectl exec -n auth -it pod/inventory-6dfbcfdcf4-xm9mn -- /bin/sh
 curl -v -X GET users
 curl -v -X GET shoes
